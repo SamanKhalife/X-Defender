@@ -10,6 +10,7 @@
 - [Running the Tool](https://github.com/SamanKhalife/X-Defender/blob/main/docs/running.md)
 - [User Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-guide.md)
 - [Features](https://github.com/SamanKhalife/X-Defender/blob/main/docs/features.md)
+- [Performance Measurement](https://github.com/SamanKhalife/X-Defender/blob/main/docs/performance.md)
 - [Developer Guide](https://github.com/SamanKhalife/X-Defender/blob/main/docs/developer-guide.md)
     - [Repository Structure](https://github.com/SamanKhalife/X-Defender/blob/main/docs/repo-tree.md)
     - [Flowchart: How This Tool Works](https://github.com/SamanKhalife/X-Defender/blob/main/docs/flowchart.md)
