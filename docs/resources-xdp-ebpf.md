@@ -10,6 +10,8 @@ If you have no idea what XDP and eBPF are or how they work, you won't be able to
 - [eBPF Official Website](https://ebpf.io/)
 - [Cilium eBPF Documentation](https://docs.cilium.io/en/stable/bpf/)
 - [Clang Documentation](https://clang.llvm.org/)
+- linux: /sys/kernel/tracing/events/syscalls
+- linux: /sys/kernel/debug/tracing/trace_pipe
 
 ### Kernel Resources
 This list provides direct links to C programs in the kernel that demonstrate various functionalities and use cases of eBPF and XDP.
@@ -53,6 +55,7 @@ This list provides direct links to C programs in the kernel that demonstrate var
 - [Netdev 0x14 - Tutorial: XDP and the cloud : Using XDP on hosts and VMs](https://youtu.be/l9C-ANkN1-Q)
 - [Netdev 0x13 - XDP Hands On Tutorial](https://youtu.be/XQOPAemSj88)
 - [Netdev 0x14 - Tutorial: How to add XDP support to a NIC](https://www.youtube.com/watch?v=ayFWnFj5fY8)
+- [Netdev 1.2-eBPF Offload to Hardware: cls_bpf and XDP-Nick Viljoen, Jakub Kicinski(1)](https://youtu.be/-5BzT1ch19s)
 
 
 
@@ -143,6 +146,95 @@ This list provides direct links to C programs in the kernel that demonstrate var
 - [Cloudflare One: One Year Later](https://blog.cloudflare.com/cloudflare-one-one-year-later/)
 - [Holistic web protection: industry recognition for a prolific 2020](https://blog.cloudflare.com/cloudflare-named-the-innovation-leader-in-holistic-web-protection/)
 
+
+
+## Slideshare
+- [Networking in userspace living on the edge](https://www.slideshare.net/shemminger/uio-final?from_search=1)
+- [Introduction to eBPF](https://www.slideshare.net/slideshow/introduction-to-ebpf/239843941?from_search=0)
+- [What is eBPF](https://www.slideshare.net/slideshow/ebpf-ovsconf2016/68467084?from_search=3)
+- [eBPF Perf Tools 2019](https://www.slideshare.net/slideshow/ebpf-perf-tools-2019/135485890?from_search=8)
+- [eBPF Superpowers CFGmgmtCamp 2023](https://www.slideshare.net/slideshow/cfgmgmtcamp-2023-ebpf-superpowers/255742836?from_search=7)
+- [eBPF Observability in Deep](https://www.slideshare.net/slideshow/ebpf-observability-in-deep/238796211?from_search=6)
+- [State of the Union: eBPF and Linux Kernel Programming](https://www.slideshare.net/slideshow/state-of-the-union-ebpf-linux-kernel-programming/267308318?from_search=9)
+- [Performance Insights into eBPF, Step by Step](https://www.slideshare.net/slideshow/performance-insights-into-ebpf-step-by-step/253521141?from_search=27)
+- [Building Network Functions with eBPF and BCC](https://www.slideshare.net/slideshow/building-network-functions-with-ebpf-bcc/106770484?from_search=28)
+- [Kernel Recipes 2017: eBPF and XDP by Eric Leblond](https://www.slideshare.net/ennael/kernel-recipes-2017-ebpf-and-xdp-eric-leblond?from_search=37)
+- [Hidden Linux Metrics with Prometheus and eBPF Exporter - LISA18](https://www.slideshare.net/slideshow/lisa18-hidden-linux-metrics-with-prometheus-ebpf-exporter/121348825?from_search=46)
+- [Monitoring Kafka without Instrumentation using eBPF - Kafka Summit London 2022](https://www.slideshare.net/slideshow/monitoring-kafka-without-instrumentation-using-ebpf-with-antn-rodrguez-kafka-summit-london-2022/251713328?from_search=51)
+- [Performance Analysis Superpowers with Linux eBPF - Velocity 2017](https://www.slideshare.net/slideshow/velocity-2017-performance-analysis-superpowers-with-linux-ebpf/77191021?from_search=59)
+- [Dynamic User Trace](https://www.slideshare.net/slideshow/dynamic-user-trace/179105823?from_search=58)
+- [Transparent eBPF Offload - Playing Nice with the Linux Kernel](https://www.slideshare.net/slideshow/transparent-ebpf-offload-playing-nice-with-the-linux-kernel/76972800?from_search=78)
+- [Linux Server Deep Dives - DrupalCon Amsterdam](https://www.slideshare.net/slideshow/linux-server-deep-dives-drupalcon-amsterdam/187803774?from_search=102)
+- [OSSNA 2017: Performance Analysis Superpowers with Linux BPF](https://www.slideshare.net/slideshow/ossna-2017-performance-analysis-superpowers-with-linux-bpf/79744787?from_search=119)
+- [XDP and eBPF Maps](https://www.slideshare.net/slideshow/xdp-and-ebpfmaps/78001591?from_search=176)
+- [Kernel Recipes 2019: XDP Closer Integration with Network Stack](https://www.slideshare.net/slideshow/kernel-recipes-2019-xdp-closer-integration-with-network-stack/176706530?from_search=201)
+- [Compiling P4 to XDP - IOVisor Summit 2017](https://www.slideshare.net/slideshow/compiling-p4-to-xdp-iovisor-summit-2017/72829826?from_search=2)
+- [My First XDP: Express Data Path](https://www.slideshare.net/slideshow/my-first-xdp-express-data-path-87764092/87764092?from_search=3)
+- [Cilium: BPF and XDP for Containers](https://www.slideshare.net/slideshow/cilium-bpf-xdp-for-containers-66969823/66969823?from_search=5)
+- [XDP in Practice: DDoS Mitigation by Cloudflare](https://www.slideshare.net/slideshow/xdp-in-practice-ddos-mitigation-cloudflare/104533237?from_search=10)
+- [Comprehensive XDP Offload: Handling the Edge Cases](https://www.slideshare.net/slideshow/comprehensive-xdp-offloadhandling-the-edge-cases/83570811?from_search=9)
+- [Cilium: Fast IPv6 Container Networking with BPF and XDP](https://www.slideshare.net/slideshow/cilium-fast-ipv6-container-networking-with-bpf-and-xdp/65332240)
+- [DoS and DDoS Mitigations with eBPF, XDP, and DPDK](https://www.slideshare.net/slideshow/dos-and-ddos-mitigations-with-ebpf-xdp-and-dpdk/193141890)
+- [eBPF Basics](https://www.slideshare.net/slideshow/ebpf-basics-149201150/149201150)
+- [Replacing iptables with eBPF in Kubernetes with Cilium](https://www.slideshare.net/slideshow/replacing-iptables-with-ebpf-in-kubernetes-with-cilium/226811243)
+- [Cilium: Network Security for Microservices](https://www.slideshare.net/slideshow/cilium-network-security-for-microservices/79745221)
+- [Using eBPF for High-Performance Networking in Cilium](https://www.slideshare.net/slideshow/using-ebpf-for-highperformance-networking-in-cilium/253521145)
+- [The Linux Networking Architecture](https://www.slideshare.net/slideshow/the-linux-networking-architecture/45348971)
+- [Linux Traffic Control](https://www.slideshare.net/slideshow/linux-linux-traffic-control/95050010)
+- [High-Performance Networking using eBPF, XDP, and io_uring](https://www.slideshare.net/slideshow/highperformance-networking-using-ebpf-xdp-and-iouring/250367722)
+- [BPF Internals and eBPF](https://www.slideshare.net/slideshow/bpf-internals-ebpf/249357290)
+- [eBPF: Rethinking the Linux Kernel](https://www.slideshare.net/slideshow/ebpf-rethinking-the-linux-kernel/229607335)
+- [eBPF Maps 101](https://www.slideshare.net/slideshow/ebpf-maps-101/95061205)
+- [BPF: Tracing and More](https://www.slideshare.net/slideshow/bpf-tracing-and-more/71128334)
+- [eBPF and XDP - SIGCOMM 2018](https://www.slideshare.net/slideshow/ebpfxdp-sigcomm-2018/112264823)
+- [eBPF Workshop](https://www.slideshare.net/slideshow/ebpf-workshop/149231197)
+- [Introduction to eBPF and XDP](https://www.slideshare.net/slideshow/introduction-to-ebpf-and-xdp/83864443)
+- [BPF: In-Kernel Virtual Machine](https://www.slideshare.net/slideshow/bpf-inkernel-virtual-machine/45036732)
+- [Understanding eBPF in a Hurry](https://www.slideshare.net/slideshow/understanding-ebpf-in-a-hurry-149197981/149197981)
+- [Performance Wins with eBPF: Getting Started 2021](https://www.slideshare.net/slideshow/performance-wins-with-ebpf-getting-started-2021/250244213)
+- [DPDK in Containers - Hands-On Lab](https://www.slideshare.net/slideshow/dpdk-in-containers-handson-lab/72926147)
+- [DPDK Layer 4 Packet Processing](https://www.slideshare.net/slideshow/dpdk-layer-4-packet-processing-72912217/72912217)
+- [VLANs in the Linux Kernel](https://www.slideshare.net/slideshow/vlans-in-the-linux-kernel/62526742)
+
+
+
+
+
+# Speakerdeck
+
+- [Unleashing the Kernel with eBPF](https://speakerdeck.com/lizrice/unleashing-the-kernel-with-ebpf?slide=14)
+- [Tracing the Containers - Mainly about eBPF](https://speakerdeck.com/udzura/tracing-the-containers-mainly-about-ebpf?slide=10)
+- [Prometheus as Exposition Format for eBPF Programs Running on Kubernetes](https://speakerdeck.com/leodido/prometheus-as-exposition-format-for-ebpf-programs-running-on-kubernetes)
+- [Advanced Linux Performance Monitoring with eBPF - Heinrich Hartmann](https://speakerdeck.com/dodzh/advanced-linux-performance-monitoring-with-ebpf-heinrich-hartmann)
+- [eBPF Implementation for FreeBSD](https://speakerdeck.com/yutarohayakawa/ebpf-implementation-for-freebsd)
+- [Go eBPF Superpowers](https://speakerdeck.com/leodido/go-ebpf-superpowers)
+- [gobpf: Utilizing eBPF from Go - FOSDEM 2017](https://speakerdeck.com/schu/gobpf-utilizing-ebpf-from-go-at-fosdem-2017)
+- [Can We Use eBPF to Debug Performance of the Go Scheduler?](https://speakerdeck.com/royra/can-we-use-ebpf-to-debug-performance-of-the-go-scheduler)
+- [0x.Tools with eBPF - Beta Release and Demo](https://speakerdeck.com/tanelpoder/0x-dot-tools-with-ebpf-beta-release-and-demo)
+- [Beginner's Guide to eBPF Programming for Networking](https://speakerdeck.com/lizrice/beginners-guide-to-ebpf-programming-for-networking)
+- [Cloud-Native eBPF Superpowers](https://speakerdeck.com/lizrice/cloud-native-ebpf-superpowers)
+- [Coverage for eBPF Programs](https://speakerdeck.com/leodido/coverage-for-ebpf-programs)
+- [eBPF Technologies with Container](https://speakerdeck.com/kentatada/ebpf-technologies-with-container)
+- [Always-On Profiling of Linux Threads on CPU and Off-CPU with eBPF and Context Enrichment](https://speakerdeck.com/tanelpoder/always-on-profiling-of-linux-threads-on-cpu-and-off-cpu-with-ebpf-and-context-enrichment)
+- [eBPF in Microservices Observability](https://speakerdeck.com/rakyll/ebpf-in-microservices-observability-399bb4af-40c0-4609-966e-bc521ed6ee18)
+- [StackRox Community Office Hours E2: eBPF 101 - Implementing Security and Monitoring Kubernetes](https://speakerdeck.com/redhatlivestreaming/stackrox-community-office-hours-e2-ebpf-101-implementing-security-and-monitoring-kubernetes)
+- [eBPF Tools on Kubernetes - Part 1](https://speakerdeck.com/ry/ebpf-tools-on-kubernetes-part1)
+- [Understanding eBPF in a Hurry](https://speakerdeck.com/rjenkins/understanding-ebpf-in-a-hurry)
+- [eBPF-Based Container Networking](https://speakerdeck.com/johnlin/ebpf-based-container-networking)
+- [eBPF's Abilities and Limitations: The Truth](https://speakerdeck.com/lizrice/ebpfs-abilities-and-limitations-the-truth)
+- [eBPF for the Rest of Us - Golab 2023](https://speakerdeck.com/fedepaol/ebpf-for-the-rest-of-us-golab-2023)
+- [eBPF Introduction](https://speakerdeck.com/oracle4engineer/ebpf-introduction)
+- [Cilium and cgroup eBPF](https://speakerdeck.com/rueian/cilium-and-cgroup-ebpf)
+- [Software Engineering that Supports LINE Original LBAAS - LINE DevDay 2019](https://speakerdeck.com/line_devday2019/software-engineering-that-supports-line-original-lbaas?slide=18)
+- [Equic Gateway: Maximizing QUIC Throughput Using a Gateway Service Based on eBPF + XDP](https://speakerdeck.com/pantuza/equic-gateway-maximizing-quic-throughput-using-a-gateway-service-based-on-ebpf-plus-xdp)
+- [XDP as a Building Block of the Advanced L4 Load Balancers](https://speakerdeck.com/line_developers/xdp-as-a-building-block-of-the-advanced-l4-load-balancers)
+- [eBPF at LINE's Private Cloud](https://speakerdeck.com/line_developers/ebpf-at-lines-private-cloud)
+- [Designing a gRPC Interface for Kernel Tracing with eBPF](https://speakerdeck.com/leodido/designing-a-grpc-interface-for-kernel-tracing-with-ebpf)
+- [NetConf 2023](https://speakerdeck.com/ennael/netconf-2023)
+- [Linux at Cloudflare](https://speakerdeck.com/majek04/linux-at-cloudflare)
+- [The BSD Packet Filter](https://speakerdeck.com/tuxology/the-bsd-packet-filter?slide=16)
+- [IP Spoofing - DefCon](https://speakerdeck.com/majek04/ip-spoofing-defcon)
+- [Cilium's Envoy Filter and vs Bridge to Kubernetes](https://speakerdeck.com/rueian/ciliums-envoy-filter-and-vs-bridge-to-kubernetes)
 
 
 ## 5. **Tools and Utilities**
