@@ -1,12 +1,17 @@
-
-
+# eBPF and XDP resources
 If you have no idea what XDP and eBPF are or how they work, you won't be able to get the best out of these technologies. Therefore, it's highly recommended to explore these resources to fully leverage their capabilities in network security.
 
-
 ## 1. **Official Documentation**
+- [Learning eBPF by Liz Rice](https://isovalent.com/books/learning-ebpf/)
+- [bpfTrace GitHub Repository](https://github.com/bpftrace/bpftrace/tree/master)
+- [libbpf GitHub Repository](https://github.com/libbpf/libbpf/tree/master)
+- [Cilium GitHub Repository](https://github.com/cilium/cilium/tree/main)
+- [BCC Documentation](https://github.com/iovisor/bcc/tree/master/docs)
+- [eBPF Official Website](https://ebpf.io/)
+- [Cilium eBPF Documentation](https://docs.cilium.io/en/stable/bpf/)
+- [Clang Documentation](https://clang.llvm.org/)
 
-## Kernel Resources
-
+### Kernel Resources
 This list provides direct links to C programs in the kernel that demonstrate various functionalities and use cases of eBPF and XDP.
 - [BPF Documentation](https://github.com/torvalds/linux/tree/master/Documentation/bpf)
 - [BPF Kernel Code](https://github.com/torvalds/linux/tree/master/kernel/bpf)
@@ -35,15 +40,7 @@ This list provides direct links to C programs in the kernel that demonstrate var
 - [BPF Net Namespace Code](https://github.com/torvalds/linux/tree/master/kernel/bpf/net_namespace.c#L60)
 - [BPF Local Storage Code](https://github.com/torvalds/linux/tree/master/kernel/bpf/local_storage.c#L598)
 
-
-## 2. **Tutorials and Guides**
-
-
-
-
-
-## 3. **Videos and Webinars**
-
+## 2. **Videos and Webinars**
 ### YouTube Resources
 - [Netdev 0x13-XDP based DDoS Mitigation](https://www.youtube.com/watch?v=1Yw6YISaSkg)
 - [BPF user experience rough edges - Jakub Sitnicki/Arthur Fabre](https://www.youtube.com/watch?v=yyAn0ZLJRRA)
@@ -59,16 +56,34 @@ This list provides direct links to C programs in the kernel that demonstrate var
 
 
 
-## 4. **Tools and Utilities**
+## 3. **GitHub Repositories:**
+### GitHub Repositories
+- [BCC Reference Guide](https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md)
+- [BCC libbpf-tools](https://github.com/iovisor/bcc/tree/master/libbpf-tools)
+- [NetOptimizer Prototype Kernel](https://github.com/netoptimizer/prototype-kernel/tree/master)
+- [XDP Tutorial by Zizheng Wong](https://github.com/zizhengWong/xdp-tutorial)
+- [NetOptimizer BPF Samples](https://github.com/netoptimizer/prototype-kernel/tree/master/kernel/samples/bpf)
+- [XDP Tutorial Project](https://github.com/xdp-project/xdp-tutorial)
+- [UDPU XDP Example](https://github.com/minimaxwell/udpu-xdp)
+- [XDP Tutor by MonkJunior](https://github.com/monkjunior/XDP-tutor)
+- [XDP Firewall Example](https://github.com/gamemann/XDP-Firewall)
+- [XDP Forwarding Example](https://github.com/gamemann/XDP-Forwarding)
+- [eBPF Summit 2020 by Jakub Sitnicki](https://github.com/jsitnicki/ebpf-summit-2020)
+- [XDP IPv6 Filter](https://github.com/dpino/xdp_ipv6_filter)
+- [XDP Redirect Example](https://github.com/zhao-kun/xdp-redirect)
+- [Libflowbypass by Justin Azoff](https://github.com/JustinAzoff/libflowbypass)
+- [libbpfgo-tools](https://github.com/mozillazg/libbpfgo-tools)
+- [libbpf Bootstrap](https://github.com/libbpf/libbpf-bootstrap)
+- [XDP ACL Example](https://github.com/hi-glenn/xdp_acl)
 
 
 
 
 
-## 5. **Blogs and Articles**
 
+
+## 4. **Blogs and Articles**
 ### Cloudflare XDP Resources
-
 - [A story about AF_XDP, network namespaces and a cookie](https://blog.cloudflare.com/a-story-about-af-xdp-network-namespaces-and-a-cookie/)
 - [A debugging story: corrupt packets in AF_XDP; a kernel bug or user error?](https://blog.cloudflare.com/a-debugging-story-corrupt-packets-in-af_xdp-kernel-bug-or-user-error/)
 - [xdpcap: XDP Packet Capture](https://blog.cloudflare.com/xdpcap/)
@@ -97,7 +112,6 @@ This list provides direct links to C programs in the kernel that demonstrate var
 - [L4Drop: XDP DDoS Mitigations](https://blog.cloudflare.com/l4drop-xdp-ebpf-based-ddos-mitigations/)
 
 ### Cloudflare eBPF Resources
-
 - [eBPF can't count?](https://blog.cloudflare.com/ebpf-cant-count/)
 - [Introducing ebpf_exporter](https://blog.cloudflare.com/introducing-ebpf_exporter/)
 - [Production ready eBPF, or how we fixed the BSD socket API](https://blog.cloudflare.com/tubular-fixing-the-socket-api-with-ebpf/)
@@ -131,9 +145,6 @@ This list provides direct links to C programs in the kernel that demonstrate var
 
 
 
-
-## 6. **GitHub Repositories:**
-
-
+## 5. **Tools and Utilities**
 
 
