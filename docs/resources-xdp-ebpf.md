@@ -56,6 +56,11 @@ This list provides direct links to C programs in the kernel that demonstrate var
 - [Netdev 0x13 - XDP Hands On Tutorial](https://youtu.be/XQOPAemSj88)
 - [Netdev 0x14 - Tutorial: How to add XDP support to a NIC](https://www.youtube.com/watch?v=ayFWnFj5fY8)
 - [Netdev 1.2-eBPF Offload to Hardware: cls_bpf and XDP-Nick Viljoen, Jakub Kicinski(1)](https://youtu.be/-5BzT1ch19s)
+- [Netdev 0x17 - TCP Offload via AF_XDP sockets– Not your grandmother’s TCP Offload!](https://youtu.be/IKMN82mhyoY)
+- [Netdev 0x15 - Accelerating synproxy with XDP](https://youtu.be/XES3bO2rW14)
+- [Netdev 2.1 - XDP in practice: integrating XDP in our DDoS mitigation pipeline](https://youtu.be/7OuOukmuivg)
+- [XDP workshop Introduction, experience, and future development - Tom Herbert](https://youtu.be/lpJk_HcCLnQ)
+- [Netdev 0x17 - XDP Workshop](https://youtu.be/y2UDh9zbX_Y)
 
 
 
