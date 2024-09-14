@@ -1,19 +1,19 @@
-<h1 align="center"> X-Defender 💥 </h1>
+<h1 align="center"> X-Defender 💥</h1>
 
 **X-Defender** is an advanced [DDoS mitigation](https://www.cloudflare.com/learning/ddos/ddos-mitigation/#:~:text=DDoS%20mitigation%20refers%20to%20the,%2Dservice%20(DDoS)%20attack.) tool built with [eBPF](https://ebpf.io/) and [XDP](https://www.iovisor.org/technology/xdp). It not only filters and limits malicious traffic in real-time but also takes a proactive and aggressive approach to neutralize threats before they impact your network. Leveraging the power of XDP, X-Defender operates at the lowest level of the Linux networking stack, ensuring high performance and minimal latency while effectively countering even the most sophisticated DDoS attacks.
 
 **Note: This project is in progress, and we are actively working on the code**
 # Table of Contents
 
-- [Deep Overview of Architecture ](https://github.com/SamanKhalife/X-Defender/blob/main/docs/architecture.md)
-- [Getting Started](https://github.com/SamanKhalife/X-Defender/blob/main/docs/getting-started.md)
+- [Deep Architecture Overview](https://github.com/SamanKhalife/X-Defender/blob/main/docs/architecture.md)
+- [Getting Started Guide](https://github.com/SamanKhalife/X-Defender/blob/main/docs/getting-started.md)
 - [Running the Tool](https://github.com/SamanKhalife/X-Defender/blob/main/docs/running.md)
-- [User Cli Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-cli.md)
-- [Features](https://github.com/SamanKhalife/X-Defender/blob/main/docs/features.md)
+- [CLI User Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-cli.md)
+- [Features Overview](https://github.com/SamanKhalife/X-Defender/blob/main/docs/features.md)
 - [Performance Measurement](https://github.com/SamanKhalife/X-Defender/blob/main/docs/performance.md)
 - [Developer Guide](https://github.com/SamanKhalife/X-Defender/blob/main/docs/developer-guide.md)
     - [Repository tree](https://github.com/SamanKhalife/X-Defender/blob/main/docs/repo-tree.md)
-    - [Flowchart: How This Tool Works](https://github.com/SamanKhalife/X-Defender/blob/main/docs/flowchart.md)
+    - [Workflow Diagram](https://github.com/SamanKhalife/X-Defender/blob/main/docs/flowchart.md)
     - [XDP and eBPF Resources](https://github.com/SamanKhalife/X-Defender/blob/main/docs/resources-xdp-ebpf.md)
 
 
@@ -21,7 +21,6 @@
 <h3 align="center"> X-Defender Network Topology </h3>
 
 ![alt text](imgs/X-defnder.png "Network Topology")
-
 
 
 # Why??
