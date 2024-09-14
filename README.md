@@ -8,7 +8,7 @@
 - [Deep Overview of Architecture ](https://github.com/SamanKhalife/X-Defender/blob/main/docs/architecture.md)
 - [Getting Started](https://github.com/SamanKhalife/X-Defender/blob/main/docs/getting-started.md)
 - [Running the Tool](https://github.com/SamanKhalife/X-Defender/blob/main/docs/running.md)
-- [User Cli Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-guide.md)
+- [User Cli Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-cli.md)
 - [Features](https://github.com/SamanKhalife/X-Defender/blob/main/docs/features.md)
 - [Performance Measurement](https://github.com/SamanKhalife/X-Defender/blob/main/docs/performance.md)
 - [Developer Guide](https://github.com/SamanKhalife/X-Defender/blob/main/docs/developer-guide.md)
