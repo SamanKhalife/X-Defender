@@ -2,4 +2,4 @@
 Makefile
 *.c
 *.rs
-Idea.md
+docs/Idea.md
