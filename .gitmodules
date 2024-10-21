@@ -1,0 +1,3 @@
+[submodule "wirefilter"]
+	path = wirefilter
+	url = https://github.com/cloudflare/wirefilter.git
