@@ -1,5 +1,5 @@
-*.svg
-Makefile
 *.c
+*.h
+*.o
 *.rs
 docs/Idea.md
