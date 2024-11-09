@@ -2,7 +2,7 @@
 
 **X-Defender** is an advanced [DDoS mitigation](https://www.cloudflare.com/learning/ddos/ddos-mitigation/#:~:text=DDoS%20mitigation%20refers%20to%20the,%2Dservice%20(DDoS)%20attack.) tool built with [eBPF](https://ebpf.io/) and [XDP](https://www.iovisor.org/technology/xdp). It not only filters and limits malicious traffic in real-time but also takes a proactive and aggressive approach to neutralize threats before they impact your network. Leveraging the power of XDP, X-Defender operates at the lowest level of the Linux networking stack, ensuring high performance and minimal latency while effectively countering even the most sophisticated DDoS attacks.
 
-**Note: This project is in progress, and we are actively working on the code**
+
 # Table of Contents
 
 - [Deep Architecture Overview](https://github.com/SamanKhalife/X-Defender/blob/main/docs/architecture.md)
@@ -16,12 +16,12 @@
     - [Workflow Diagram](https://github.com/SamanKhalife/X-Defender/blob/main/docs/flowchart.md)
     - [XDP and eBPF Resources](https://github.com/SamanKhalife/X-Defender/blob/main/docs/resources-xdp-ebpf.md)
 
-
-
 <h3 align="center"> X-Defender Network Topology </h3>
 
 ![alt text](imgs/X-defnder.png "Network Topology")
 
+> [!CAUTION]
+> This project is still in very early stages of development. Use at your own risk. We are looking for contributors to help improve and expand the project.
 
 # Why??
 As shown in the Packet Flow in [Packet flow in Netfilter and General Networking](https://upload.wikimedia.org/wikipedia/commons/3/37/Netfilter-packet-flow.svg), XDP operates at the earliest point where packets are handled by the network card. This allows X-Defender to intercept and process packets at this initial stage. By implementing DDoS mitigation at this level, you can protect your system efficiently and cost-effectively while minimizing the load on your system. mostly they use xdp for mitigation and for load balancing like in [cloud flare](https://youtu.be/ZQsbYmdMjnw?t=2685) or many other providers and even [Meta](https://about.meta.com/).
