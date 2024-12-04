@@ -4,3 +4,5 @@ Ansible
 *.o
 *.rs
 docs/Idea.md
+_build/
+.vscode/
