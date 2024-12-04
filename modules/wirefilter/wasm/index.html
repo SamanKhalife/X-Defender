@@ -1,0 +1,37 @@
+<input id="input" placeholder="filter" /><br />
+<output for="input" id="output" style="white-space: pre; font-family: monospace"></output>
+<script src="pkg/wirefilter_wasm.js"></script>
+<script>
+  function handleError(err) {
+    console.error(err);
+    output.value = err.toString();
+  }
+
+  (async () => {
+    delete WebAssembly.instantiateStreaming;
+
+    await wasm_bindgen('pkg/wirefilter_wasm_bg.wasm');
+
+    const scheme = new wasm_bindgen.Scheme({
+      ip: 'Ip',
+      str: 'Bytes',
+      bytes: 'Bytes',
+      int: 'Int',
+      bool: 'Bool'
+    });
+
+    function updateOutput() {
+      try {
+        let res = scheme.parse(input.value);
+        console.log(res);
+        output.value = JSON.stringify(res, null, 2);
+      } catch (err) {
+        handleError(err);
+      }
+    }
+
+    updateOutput();
+
+    input.addEventListener('keyup', updateOutput);
+  })().catch(handleError);
+</script>

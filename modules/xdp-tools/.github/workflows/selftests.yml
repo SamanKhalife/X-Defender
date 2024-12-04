@@ -1,0 +1,65 @@
+name: Selftests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  selftest:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        KERNEL_VERSION:
+          - "6.12.0-65.fc42"
+          - "6.10.14-200.fc40"
+          - "6.6.14-200.fc39"
+          - "6.1.9-200.fc37"
+          - "5.16.8-200.fc35"
+          - "5.11.0-156.fc34"
+          - "5.6.19-300.fc32"
+        LLVM_VERSION:
+          - 16
+          - 17
+          - 18
+          - 19
+      fail-fast: false
+
+    env:
+      KERNEL_VERSION: ${{ matrix.KERNEL_VERSION }}
+      LLVM_VERSION: ${{ matrix.LLVM_VERSION }}
+      CLANG: clang-${{ matrix.LLVM_VERSION }}
+      LLC: llc-${{ matrix.LLVM_VERSION }}
+      LLVM_STRIP: llvm-strip-${{ matrix.LLVM_VERSION }}
+      # can't use unshare on old kernels
+      DID_UNSHARE: ${{ (startsWith(matrix.KERNEL_VERSION, '5.6') || startsWith(matrix.KERNEL_VERSION, '5.11')) && 1 || 0 }}
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Prepare packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install zstd binutils-dev elfutils libpcap-dev libelf-dev gcc-multilib pkg-config wireshark tshark bpfcc-tools python3 python3-pip python3-setuptools qemu-kvm rpm2cpio libdw-dev libdwarf-dev libcap-ng-dev socat
+      - name: Prepare Clang
+        run: |
+          wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+          echo "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-$LLVM_VERSION main" | sudo tee -a /etc/apt/sources.list
+          sudo apt-get -qq update
+          sudo apt-get -qq -y install clang-$LLVM_VERSION lld-$LLVM_VERSION llvm-$LLVM_VERSION
+      - name: Install latest bpftool
+        run: |
+          git clone --depth=1 --recurse-submodules https://github.com/libbpf/bpftool bpftool
+          make -C bpftool/src
+          sudo make install -C bpftool/src prefix=/usr
+      - name: Compile
+        run: make
+      - name: Prepare test tools
+        run: .github/scripts/prepare_test_tools.sh
+      - name: Prepare test kernel
+        run: .github/scripts/prepare_test_kernel.sh
+      - name: Run tests
+        run: .github/scripts/run_tests_in_vm.sh
