@@ -1,6 +1,0 @@
-/artifacts
-/target
-/engine/target/criterion
-/wasm/pkg
-wasm-pack.log
-.DS_Store
