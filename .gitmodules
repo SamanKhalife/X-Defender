@@ -1,3 +1,6 @@
 [submodule "modules/xdp-tools"]
 	path = modules/xdp-tools
 	url = https://github.com/xdp-project/xdp-tools
+[submodule "modules/wirefilter"]
+	path = modules/wirefilter
+	url = https://github.com/cloudflare/wirefilter
