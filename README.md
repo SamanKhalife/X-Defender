@@ -30,8 +30,9 @@ However, Our current focus is on DDoS mitigation using XDP, which is the most ef
 
 ![alt text](images/packet-dropping-performance.png "Packet Dropping performance")
 
-When we mention this, we really mean that. if you want to know more about the dropping performance at each layer, you should read [this blog](https://blog.cloudflare.com/how-to-drop-10-million-packets/) by [@majek](https://github.com/majek)
+When we mention this, we really mean that. if you want to know more about the dropping performance at each layer, you should read [this blog](https://blog.cloudflare.com/how-to-drop-10-million-packets/) by [@majek](https://github.com/majek).
 
+To learn how they deployed this tool in a distributed manner, you can read this [article](https://netdevconf.info/2.1/papers/Gilberto_Bertin_XDP_in_practice.pdf) by [@Gilberto](https://github.com/jibi).
 ## How X-defender Really Works
 
 **X-Defender** processes incoming packets at the network interface level using eBPF and XDP. When the rate limit is exceeded or an attack is detected, the tool drops or redirects the malicious packets.
@@ -47,7 +48,7 @@ When we mention this, we really mean that. if you want to know more about the dr
 ## Examples of Usage
 In our view, the optimal use of this tool is on L4 load balancers or as the first point in your network stack. Deploying it at this level ensures that malicious traffic is dropped before it can impact any upstream services, providing an additional layer of security and performance.
 
-Here are examples of [using and Integration to X-Defender]().
+Here are examples of [X-Defender Usage and Integration's ]().
 
 # Intended Use
 X-Defender is designed as an advanced DDoS mitigation tool that leverages the capabilities of eBPF and XDP to provide high-performance packet filtering and traffic management at the earliest point of packet processing, directly on the network interface. The primary intended use of X-Defender is to detect and mitigate malicious traffic patterns, such as those seen in DDoS attacks, in real-time, with minimal resource overhead.
@@ -58,6 +59,3 @@ X-Defender is designed as an advanced DDoS mitigation tool that leverages the ca
 3. **Internet Service Providers (ISPs)**: To protect infrastructure from large-scale DDoS attacks and ensure uninterrupted service for their customers.
 4. **Large Enterprises**: Especially those in sectors like finance, healthcare, and e-commerce, which are frequent targets of DDoS attacks and require real-time protection to maintain service availability.
 5. **Managed Security Service Providers (MSSPs):** To offer advanced DDoS protection services to their clients as part of a comprehensive security portfolio
-
-# License
-X-Defender is Dual MIT/GPL licensed.
