@@ -5,20 +5,17 @@
 
 # Table of Contents
 
-- [Deep Architecture Overview](https://github.com/SamanKhalife/X-Defender/blob/main/docs/architecture.md)
-- [Getting Started Guide](https://github.com/SamanKhalife/X-Defender/blob/main/docs/getting-started.md)
+- [Architecture](https://github.com/SamanKhalife/X-Defender/blob/main/docs/architecture.md)
 - [Running the Tool](https://github.com/SamanKhalife/X-Defender/blob/main/docs/running.md)
-- [CLI User Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-cli.md)
-- [Features Overview](https://github.com/SamanKhalife/X-Defender/blob/main/docs/features.md)
-- [Performance Measurement](https://github.com/SamanKhalife/X-Defender/blob/main/docs/performance.md)
-- [Developer Guide](https://github.com/SamanKhalife/X-Defender/blob/main/docs/developer-guide.md)
+- [CLI & GUI Manual](https://github.com/SamanKhalife/X-Defender/blob/main/docs/user-cli.md)
+- [Resources](https://github.com/SamanKhalife/X-Defender/blob/main/docs/developer-guide.md)
     - [Repository tree](https://github.com/SamanKhalife/X-Defender/blob/main/docs/repo-tree.md)
     - [Workflow Diagram](https://github.com/SamanKhalife/X-Defender/blob/main/docs/flowchart.md)
     - [XDP and eBPF Resources](https://github.com/SamanKhalife/X-Defender/blob/main/docs/resources-xdp-ebpf.md)
 
 <h3 align="center"> X-Defender Network Topology </h3>
 
-![alt text](imgs/X-defnder.png "Network Topology")
+![alt text](images/X-defnder.png "Network Topology")
 
 > [!CAUTION]
 > This project is still in very early stages of development. Use at your own risk. We are looking for contributors to help improve and expand the project.
@@ -31,7 +28,7 @@ Cloud providers employ various techniques to mitigate DDoS attacks, such as usin
 However, Our current focus is on DDoS mitigation using XDP, which is the most effective approach available. By leveraging XDP’s low-level packet processing capabilities, we can address DDoS attacks at the earliest stage of packet handling. X-Defender, by operating at this foundational level in the network stack, ensures efficient mitigation of DDoS attacks with minimal impact on system performance.
 
 
-![alt text](imgs/packet-dropping-performance.png "Packet Dropping performance")
+![alt text](images/packet-dropping-performance.png "Packet Dropping performance")
 
 When we mention this, we really mean that. if you want to know more about the dropping performance at each layer, you should read [this blog](https://blog.cloudflare.com/how-to-drop-10-million-packets/) by [@majek](https://github.com/majek)
 
